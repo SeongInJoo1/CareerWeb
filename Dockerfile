@@ -54,4 +54,9 @@ RUN pip3 install Pillow
 # RUN pipenv install --skip-lock --system --dev
 
 EXPOSE 8888
-CMD python3 manage.py runserver 0.0.0.0:$PORT
+#CMD python3 manage.py runserver 0.0.0.0:8888
+
+#CMD python3 manage.py migrate && python3 manage.py createsuperuser --username=admin && python3 manage.py runserver 0.0.0.0:8888
+CMD python3 manage.py migrate && python3 manage.py createsuperuser --noinput --username=admin --email=admin@example.com && python3 manage.py runserver 0.0.0.0:8888
+
+#CMD python3 manage.py migrate && python3 manage.py createsuperuser --noinput && python3 manage.py runserver 0.0.0.0:8888
