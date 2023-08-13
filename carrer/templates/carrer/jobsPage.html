@@ -62,17 +62,17 @@
                     </li>
 
                     <li style="color: #fff" class="blue">
-                        <a style="text-decoration: none; color: #fff" href="" target="">Blog</a>
+                        <a style="text-decoration: none; color: #fff" href="https://sugary-musician-87a.notion.site/JooSeongIn-b09f2f0aae6e4ef5b0eca61734e49d49" target="">Notion</a>
                     </li>
                     <!-- <li style="color: inherit" class="blue">Apply</li> -->
 
-                    <li style="color: #fff;">Support</li>
+                    <li style="color: #fff;">Preparing</li>
                     <li>
                         <a style="text-decoration: none; color: #fff"
-                            href="" target="">Community</a>
+                            href="" target="">Preparing</a>
                     </li>
 
-                    <l1><a href="" target="" class="github-star"
+                    <l1><a href="https://github.com/SeongInJoo1" target="" class="github-star"
                             style="text-decoration: none">
                             <div class="github-star-right">
                                 <img style="height: 17px; width: 17px; margin-right: 4px"
@@ -80,7 +80,7 @@
                                 Stars
                             </div>
                             <div class="github-star-count">
-                                <span id="star-count">130</span>
+                                <span id="star-count">999</span>
                             </div>
                         </a>
                     </l1>
@@ -89,7 +89,7 @@
         </header>
     </div>
 
-    <div class="all-jobs-heading"><b>Current</b> Openings</div>
+    <div class="all-jobs-heading"><b>Project</b> Experience</div>
 
     <br />
     <div class="outer-jobs">
@@ -115,7 +115,7 @@
                         $("#allJobs").append(
                             `<div class="jobs-card jobs-card-big">
                                 <div class="job-card-content">
-                                    
+
                                         <div class="job-intro">
                                             <span><h3>` +
                             response[i].position +
@@ -142,7 +142,7 @@
                             response[i].description +
                             `
                                         </span>
-                                    
+
                                 </div>
                             </div>`
                         );
@@ -151,7 +151,7 @@
             });
         });
     </script>
-    
+
     <script>
         function sleep(ms) {
             return new Promise((resolve) => setTimeout(resolve, ms));
@@ -187,7 +187,7 @@
                         $("#description").empty();
                         $("#description").append(
                             `<div class="jobs-card jobs-card-big job-desc" style="height:80vh; width:100%;">
-                            
+
                             <div class='hover'>
                                 <button class="back-button-form" onclick=closeForm()>
                                     Back
@@ -199,7 +199,7 @@
                                         <h1 class="form_title">Upload Your Resume</h1>
 
                                         <input type="text" class="JobID" name="id" value="`+ response.id +`"></input>
-                                        
+
                                         <div class="form_div">
                                             <input type="text" class="form_input" name="name" placeholder=" " required>
                                         <label for="" class="form_label">Name</label>
@@ -232,7 +232,7 @@
 
 
                 <div class="job-card-content">
-                    
+
                         <div class="job-intro">
                             <span>
                                 <h3>` +
@@ -268,9 +268,9 @@
                         <div>
                             ` +
                             response.requirements +
-                            `    
+                            `
                         </div>
-                    
+
                 </div>
             </div>`
                         );
@@ -304,7 +304,7 @@
         // _data["csrfmiddlewaretoken"] = $('input[name=csrfmiddlewaretoken]').val();
         console.log(_data1);
         console.log("AGEY");
-        
+
         $.ajax({
             url: "/application/",
             type: "post",
@@ -331,7 +331,7 @@
     <!-- <script>
         AOS.init({
         //   offset: "200",
-        //   delay: "100", 
+        //   delay: "100",
         //   duration: "1000",
         });
       </script> -->
