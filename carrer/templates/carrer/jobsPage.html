@@ -196,7 +196,7 @@
                                 <div class="l-form">
                                     <form action="/application/" method="post" class="form" id="form" enctype="multipart/form-data">
                                         {% csrf_token %}
-                                        <h1 class="form_title">Upload Your Resume</h1>
+                                        <h1 class="form_title">Upload Your Question</h1>
 
                                         <input type="text" class="JobID" name="id" value="`+ response.id +`"></input>
 
@@ -242,7 +242,7 @@
                             </span>
                             <button class="apply-now" onclick=openForm(` +
                             response.id +
-                            `)>Apply Now</button>
+                            `)>Q & A</button>
                             <span>
                                 <p>` +
                             response.location +
